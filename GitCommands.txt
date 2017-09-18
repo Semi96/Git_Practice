@@ -1,0 +1,24 @@
+GIT WORK FLOW GUIDE:
+
+	git branch <branchName>			create local branch
+	git checkout <branchName>   		checkout the branch. (now we are working on this branch)
+	git status				check modifications you've made as well as branch status
+	git add -A				stage changes
+	git commit				commit changes (git commit -m 'message here')
+	Esc + i to begin writing comments	: + wq to complete commit
+	git push -u origin <branchName>		Push branchName to remote repository
+
+(Typically someone will review the branch and the changes i submitted now. If all is good, merge branch with master) 
+
+	git checkout master			First, 'switch' to master branch
+	git pull origin master			Pull down any changes made so our local master branch is up to date with remote master
+	git merge <branchName>			Merge this with branchName
+	git push origin master			Push these changes
+
+
+ADDITIONAL:
+
+	git branch -a				See all branches (local & remote) and which one you're on
+	git branch --merged			See branches we've merged so far
+	git branch -d <branchName>		Delete local branch
+	git push origin --delete <branchName>	Delete remote branch (RARELY do this)
